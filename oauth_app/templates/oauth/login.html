@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Google Auth Project</title>
+</head>
+<body>
+<!--<a href="http://google.co.in">Login with Google</a>-->
+<div><h3>You are not logged in.</h3></div>
+<a href="{% url 'social:begin' 'google-oauth2' %}?next=/oauth/main">Login with Google</a>
+</body>
+</html>
